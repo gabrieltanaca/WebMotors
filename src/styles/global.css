@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--light-gray);
+}
+
+:root {
+  --red: #ea0002;
+  --yellow: #f9a90d;
+  --gray: #ececec;
+  --light-gray: #e5e5e5;
+  --white: #ffffff;
+  --text: #8f8f8f;
+  --line: #b8b8b8;
+}
+
+html,
+body,
+input,
+button,
+select,
+option {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.homeContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  margin: 24px 16px;
+}
+
+.buyContainer {
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerBox {
+  width: 100%;
+  height: 68px;
+  max-width: 933px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerBox div {
+  display: flex;
+}
+
+.headerBox button {
+  border: 2px solid var(--yellow);
+  border-radius: 3px;
+
+  padding: 10px 48px;
+  margin: auto;
+  margin-right: 0;
+
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.headerBox button:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.searchBox {
+  max-width: 933px;
+  max-height: 312px;
+  width: 933px;
+  height: 312px;
+
+  background-color: var(--white);
+
+  padding: 24px 48px;
+}
+
+.searchBox div {
+  background-color: transparent;
+}
+
+.promotionButton {
+  background-color: var(--red);
+  color: var(--white);
+  flex: 0;
+
+  border: 0;
+  border-radius: 3px;
+
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 96px;
+}
+
+.promotionButton:hover {
+  background-color: var(--gray);
+  color: var(--red);
+}
