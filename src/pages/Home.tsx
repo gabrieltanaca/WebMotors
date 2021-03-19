@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import CheckBox from "../components/CheckBox";
 import ChoiceButton from "../components/ChoiceButton";
+import CustomInput from "../components/CustomInput";
 import Select, { CustomSelectOptions } from "../components/CustomSelect";
 import api from "../services/api";
 import styles from "../styles/pages/Home.module.css";
@@ -143,8 +144,12 @@ const Home: React.FC = () => {
           <div className={styles.searchBody}>
             <div className={styles.row}>
               <div className={styles.colunm}>
-                <input type="text" className={styles.inputBox} />
-                <Select name="Raio" options={[]} onChange={() => {}} />
+                <CustomInput
+                  left="Teste"
+                  right={
+                    <Select name="Raio" options={[]} onChange={() => {}} />
+                  }
+                />
               </div>
 
               <div className={styles.colunm}>

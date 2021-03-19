@@ -1,0 +1,28 @@
+.container-input {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0 0 0 10px;
+}
+
+.container-input .left {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.container-input .right {
+  flex: 1;
+}
+.container-input input {
+  flex: 1;
+}
+
+.container-input .containerSelect {
+  border: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid var(--line);
+}
