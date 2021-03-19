@@ -9,17 +9,20 @@
   transition: ease-in 0.07s;
 }
 
-.containerButton:hover {
+.containerButton:hover,
+.containerButton.active {
   cursor: pointer;
   border-bottom: 4px solid var(--red);
   padding-bottom: 12px;
 }
 
-.containerButton:hover .textBox span {
+.containerButton:hover .textBox span,
+.containerButton.active .textBox span {
   color: var(--red);
 }
 
-.containerButton:hover svg path {
+.containerButton:hover svg path,
+.containerButton.active svg path {
   fill: var(--red);
 }
 

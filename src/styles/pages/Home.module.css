@@ -157,12 +157,3 @@
 .colunm:last-child {
   margin-left: 10px;
 }
-
-.inputBox {
-  position: absolute;
-  background-color: green;
-  flex: 0;
-
-  font-size: 24px;
-  display: flex;
-}

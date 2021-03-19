@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   padding-right: 10px;
+
+  color: var(--text);
 }
 
 .container-input .right {

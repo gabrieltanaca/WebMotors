@@ -32,6 +32,8 @@ const Home: React.FC = () => {
   const [versao, setVersao] = useState<CustomSelectOptions[]>([
     { label: "Todas", value: 0 },
   ]);
+  const [tab, setTab] = useState("carros");
+
   const [marcasValue, setMarcasValue] = useState<any>(0);
   const [modelosValue, setModelosValue] = useState<any>(0);
   const [versaoValue, setVersaoValue] = useState<any>(0);
@@ -129,8 +131,22 @@ const Home: React.FC = () => {
         />
         <div className={styles.headerBox}>
           <div>
-            <ChoiceButton src="/icons/icon_car.svg" tag="CARROS" />
-            <ChoiceButton src="/icons/icon_motorcycle.svg" tag="MOTOS" />
+            <ChoiceButton
+              src="/icons/icon_car.svg"
+              tag="CARROS"
+              onClick={() => {
+                setTab("carros");
+              }}
+              isActive={tab === "carros"}
+            />
+            <ChoiceButton
+              src="/icons/icon_motorcycle.svg"
+              tag="MOTOS"
+              onClick={() => {
+                setTab("motos");
+              }}
+              isActive={tab === "motos"}
+            />
           </div>
 
           <button>Vender meu carro</button>
@@ -145,7 +161,12 @@ const Home: React.FC = () => {
             <div className={styles.row}>
               <div className={styles.colunm}>
                 <CustomInput
-                  left="Teste"
+                  left={
+                    <>
+                      <img src="/icons/icon_marker.svg" alt="marker" />
+                      <span>Onde:</span>
+                    </>
+                  }
                   right={
                     <Select name="Raio" options={[]} onChange={() => {}} />
                   }
@@ -159,6 +180,7 @@ const Home: React.FC = () => {
                       name="Marca"
                       options={marcas}
                       onChange={setMarcasValue}
+                      placeholder="Escolha"
                     />
                   </div>
 
@@ -167,6 +189,7 @@ const Home: React.FC = () => {
                       name="Modelos"
                       options={modelos}
                       onChange={setModelosValue}
+                      placeholder="Escolha"
                     />
                   </div>
                 </div>
@@ -203,6 +226,7 @@ const Home: React.FC = () => {
                   name="Versão"
                   options={versao}
                   onChange={setVersaoValue}
+                  placeholder="Escolha"
                 />
               </div>
             </div>
