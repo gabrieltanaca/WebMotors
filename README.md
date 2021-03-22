@@ -2,7 +2,7 @@
     <img src="public/icons/webmotors_logo.svg" >
 </h1>
 
-<h1>
+<h1 align="center">
   <img src="public/WebMotors.gif">
 </h1>
 
